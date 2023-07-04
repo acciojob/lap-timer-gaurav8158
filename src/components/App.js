@@ -42,7 +42,7 @@ const formate = (time)=>{
 const ms= (`0${Math.floor(time%1000)}`).slice(-2);
 const sec = (`0${Math.floor((time/1000)%60)}`).slice(-2);
 const min= (`0${Math.floor((time / (1000 * 60)) % 60)}`).slice(-2);
-return `${min}:${sec}.${ms}`;
+return `${min}:${sec}:${ms}`;
 }
   return (
     <div>
